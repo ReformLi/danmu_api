@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "functions": {
-    "danmu_api/worker.js": {
-      "maxDuration": 60
+  "builds": [
+    {
+      "src": "danmu_api/worker.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
